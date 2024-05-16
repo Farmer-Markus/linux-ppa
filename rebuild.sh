@@ -12,4 +12,6 @@ gpg --default-key $email --clearsign -o - Release > InRelease
 
 git add -A
 git commit -m update
+
+echo "pushing update onto github"
 git push -u origin HEAD:master
